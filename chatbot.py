@@ -21,8 +21,7 @@ def main():
 	# config.read('config.ini')
 	# updater = Updater(token=(config['TELEGRAM']['ACCESS_TOKEN']), use_context=True)
 	
-	# updater = Updater(token=(os.environ['TLG_ACCESS_TOKEN']), use_context=True)
-	updater = Updater(token=("7090890054:AAHlEdidtPJOILof81ToipbKNhMyocvaR5s"), use_context=True)
+	updater = Updater(token=(os.environ['TLG_ACCESS_TOKEN']), use_context=True)
 	dispatcher = updater.dispatcher
 	
 
