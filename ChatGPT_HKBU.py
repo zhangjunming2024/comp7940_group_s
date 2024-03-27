@@ -16,8 +16,13 @@ class HKBU_ChatGPT():
 	def submit(self,message):
 		conversation = [{"role": "user","content": message}]
 		url = ("https://chatgpt.hkbu.edu.hk/general/rest") + "/deployments/" +("gpt-35-turbo") +"/chat/completions/?api-version=" +("2024-02-15-preview")
+		# headers = { 'Content-Type': 'application/json',
+		# 'api-key': (os.environ['GPT_ACCESS_TOKEN']) }
+		
 		headers = { 'Content-Type': 'application/json',
-		'api-key': (os.environ['GPT_ACCESS_TOKEN']) }
+		'api-key': ("8876877a-2d16-4901-8796-ba2a292ef928") }
+
+
 		# url = (self.config['CHATGPT']['BASICURL']) +"/deployments/" + (self.config['CHATGPT']['MODELNAME']) +"/chat/completions/?api-version=" +(self.config['CHATGPT']['APIVERSION'])
 		# headers = { 'Content-Type': 'application/json',
 		# 'api-key': (self.config['CHATGPT']['ACCESS_TOKEN']) }
