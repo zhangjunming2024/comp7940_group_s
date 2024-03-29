@@ -14,7 +14,7 @@ from ChatGPT_HKBU import HKBU_ChatGPT
 global mongodb1
 
 
-# test of the action
+# test of the action s
 def main():
 	# Load your token and create an Updater for your Bot
 	# config = configparser.ConfigParser()
