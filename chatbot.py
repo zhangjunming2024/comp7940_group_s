@@ -137,7 +137,7 @@ def equiped_chatgpt(update, context):
 				context.bot.send_message(chat_id=update.effective_chat.id, text=reply_message)
 		elif input_text[0:8] == "#culture":
 			# judge of the input
-			judge_message = "please judge the "+ input_text[8:] +"whether is a food. If it is a country please reply me with the simple number 1, if not reply me with simple number 0"
+			judge_message = "please judge the "+ input_text[8:] +"whether is a food. If it is a food please reply me with the simple number 1, if not reply me with simple number 0"
 			reply_message = chatgpt.submit(judge_message)
 			if reply_message == "0":
 				logging.info("Update: " + str(update))
